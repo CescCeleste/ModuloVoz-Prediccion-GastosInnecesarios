@@ -1,0 +1,55 @@
+<pantalla>:
+    MDTextField:
+        text: "Producto"
+        size_hint: (.40,.1)
+        pos_hint: {"x": .55, "y": .8}
+        id: txt_Producto
+        
+    MDTextField:
+        text: "Precio"
+        size_hint: (.40,.1)
+        pos_hint: {"x": .55, "y": .6}
+        id: txt_Precio
+        
+    MDTextField:
+        text: "Cantidad"
+        size_hint: (.40,.1)
+        pos_hint: {"x": .55, "y": .4}
+        id: txt_Cantidad
+        
+    MDTextField:
+        text: "Fecha"
+        size_hint: (.40,.1)
+        pos_hint: {"x": .55, "y": .2}
+        id: txt_Fecha
+        
+    MDFillRoundFlatButton:
+        text: "Nombre"
+        pos_hint: {"x": .05, "y": .8}
+        size_hint: (.40,.1)
+        id: btn_Producto
+        on_release: root.voz_boton('Nombre')
+        
+    MDFillRoundFlatButton:
+        text: "Precio"
+        pos_hint: {"x": .05, "y": .6}
+        size_hint: (.40,.1)
+        id: btn_Precio
+        on_release: root.voz_boton('Precio')
+        
+    MDFillRoundFlatButton:
+        text: "Cantidad"
+        pos_hint: {"x": .05, "y": .4}
+        size_hint: (.40,.1)
+        id: btn_Cantidad
+        on_release: root.voz_boton('Cantidad')
+        
+        
+    MDFillRoundFlatButton:
+        text: "Agregar"
+        pos_hint: {"x": .30, "y": .07}
+        size_hint: (.40,.1)
+        id: btn_Agregar
+        on_release: root.accion()
+        
+    
